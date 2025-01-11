@@ -10,12 +10,12 @@ const HeroSection = () => {
             ORGANIZE SUAS LEITURAS
           </h1>
           <p className="text-gray-700 mb-8 text-lg">
-            Cadastre os livros que leu, adicione datas importantes e compartilhe suas opiniões sobre cada obra.
+            Cadastre os livros que leu, adicione datas importantes e compartilhe suas <br /> opiniões sobre cada obra.
           </p>
-          <button className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 text-lg font-semibold">
+          <a href="#buscar-cadastrar-livros" className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 text-lg font-semibold">
             Cadastrar Livro
             <ArrowBigDownDash className="inline-block w-6 h-6 ml-2" />
-          </button>
+          </a>
         </div>
         <div className="relative mt-8 md:mt-0">
           <img
