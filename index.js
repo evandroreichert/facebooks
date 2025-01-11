@@ -1,17 +1,29 @@
 const express = require('express')
-const testRoute = require('./routes/testRoute')
-
+const cors = require('cors')
 const app = express()
 const porta = 3000
 
+app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('server rodando')
+let livros = []
+
+app.post('/api/livros/cadastrar', (req, res) => {
+    const livro = req.body
+    
+    if (!livro || !livro.titulo) {
+        return res.status(400).json({ message: 'Dados do livro inválidos!' })
+    }
+
+    livros.push(livro)
+    console.log('Livros cadastrados até agora:', livros)
+    res.status(201).json({ message: 'Livro cadastrado com sucesso!', livro })
 })
 
-app.use('/api', testRoute)
+app.get('/api/livros', (req, res) => {
+    res.json(livros)
+})
 
 app.listen(porta, () => {
-    console.log(`servidor rodando na porta ${porta}`)
+    console.log(`Servidor rodando na porta ${porta}`)
 })
