@@ -21,8 +21,6 @@ Este projeto é uma aplicação que permite ao usuário buscar livros através d
   - Vite
   - React
   - Axios
-  - React Router 
-  - Lucide Icons 
   - Tailwind CSS 
   
 - **Backend**:
