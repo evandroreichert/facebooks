@@ -14,9 +14,9 @@ const Header = ({ setSearchQuery }) => {
         <nav className="flex items-center justify-between">
           <a
             href="/"
-            className="text-3xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+            className="text-4xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
           >
-            facebooks.
+            facebooks
           </a>
           <div className="flex items-center space-x-4">
             <div className="relative">
