@@ -19,7 +19,7 @@ const HeroSection = () => {
         </div>
         <div className="relative mt-8 md:mt-0">
           <img
-            src="https://i.gifer.com/NYqp.gif"
+            src="https://m.media-amazon.com/images/I/81ibfYk4qmL._AC_UF1000,1000_QL80_.jpg"
             alt="Capa do livro Harry Potter e a Pedra Filosofal"
             className="w-full max-w-[400px] rounded-lg shadow-lg mx-auto"
           />
