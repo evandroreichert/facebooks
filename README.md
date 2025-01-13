@@ -26,7 +26,6 @@ Este projeto é uma aplicação que permite ao usuário buscar livros através d
 - **Backend**:
   - Node.js
   - Express
-  - JSON (para armazenamento temporário dos livros)
 
  ### Não há conexão com banco de dados. Os livros cadastrados serão apagados quando o servidor for reiniciado.
 
